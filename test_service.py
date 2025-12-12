@@ -1,8 +1,9 @@
 import requests
 
-topic = "Архитектура LLM"
+topic = "Чипы для ИИ"
 
-url = "http://localhost:8000/generate-post"
+#url = "http://localhost:8000/generate-post"
+url = "https://dreadful-anestassia-igorvolk-9eb2dc2a.koyeb.app//generate-post"
 response = requests.post(url, json={'topic': topic})  # Выполняем POST-запрос к API
 if response.status_code != 200:
     # Если статус код не 200, выводим ошибку
